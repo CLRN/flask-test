@@ -1,0 +1,16 @@
+<article>
+    <details>
+        <summary>{{ preview_text }}</summary>
+        {% for item in items %}
+            <details>
+                <summary>{{ item['type'] }}</summary>
+                <dl class="dl-horizontal">
+                {% for key, value in item.items() %}
+                    <dt>{{ key }}</dt>
+                    <dd>{{ value }}</dd>
+                {% endfor %}
+                </dl>
+            </details>
+        {% endfor %}
+    </details>
+</article>

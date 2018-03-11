@@ -1,0 +1,5 @@
+{% extends 'appbuilder/baselayout.html' %}
+{% block head_css %}
+    {{ super() }}
+    <link href="{{url_for('static', filename='css/dl-text-align.css')}}" rel="stylesheet">
+{% endblock %}
